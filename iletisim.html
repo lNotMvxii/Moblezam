@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>İletişim Sayfası</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-[#111318] dark:text-white/90">
+    <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <header
+            class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
+            <div class="container mx-auto px-4 sm:px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <!-- Logo and Brand Name -->
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="logo.png" alt="Moblezam" class="h-10 w-auto">
+
+                        <span class="text-xl font-bold text-text-light dark:text-text-dark">Moblezam</span>
+                    </a>
+
+                    <!-- Navigation Links -->
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a href="index.html"
+                            class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">Ana
+                            Sayfa</a>
+                        <a href="urunliste.html"
+                            class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">Ürünler</a>
+                        <a href="sepetsayfasi.html" class="text-sm font-bold text-primary">Sepet</a>
+                        <a href="Hakkimizda.html"
+                            class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">Hakkımızda</a>
+                    </nav>
+
+                    <!-- User Actions -->
+                    <div class="flex items-center gap-4">
+                        <button
+                            class="p-2 text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">
+                            <span class="material-symbols-outlined">favorite</span>
+                        </button>
+                        <a href="sepetsayfasi.html"
+                            class="p-2 text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors relative">
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                            <span
+                                class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                        </a>
+                        <button class="md:hidden p-2 text-text-light dark:text-text-dark">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow">
+            <div class="py-16 sm:py-24">
+                <div class="container mx-auto px-4">
+                    <div class="flex flex-col gap-6 text-center max-w-2xl mx-auto mb-16">
+                        <h1
+                            class="text-[#111318] dark:text-white text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em]">
+                            Bize Ulaşın</h1>
+                        <p class="text-[#616f89] dark:text-white/70 text-lg leading-normal">Sorularınız, önerileriniz
+                            veya işbirliği teklifleriniz için bize ulaşmaktan çekinmeyin. Ekibimiz size yardımcı olmak
+                            için burada.</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-24 items-start">
+                        <div class="flex flex-col gap-8">
+                            <div class="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-background-dark">
+                                <div
+                                    class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+                                    <span class="material-symbols-outlined text-2xl">location_on</span>
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <p class="text-[#111318] dark:text-white text-base font-medium leading-normal">
+                                        Adresimiz</p>
+                                    <p class="text-[#616f89] dark:text-white/70 text-sm font-normal leading-normal">
+                                        Ümraniye 75.Yıl Cumhuriyet Mesleki ve Teknik Anadolu Lisesi</p>
+                                    <a class="text-primary text-sm font-medium mt-1" href="#">Haritada Gör</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-background-dark">
+                                <div
+                                    class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+                                    <span class="material-symbols-outlined text-2xl">call</span>
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <p class="text-[#111318] dark:text-white text-base font-medium leading-normal">
+                                        Telefon</p>
+                                    <p class="text-[#616f89] dark:text-white/70 text-sm font-normal leading-normal">+90
+                                        216 123 45 67</p>
+                                    <a class="text-primary text-sm font-medium mt-1" href="#">Şimdi Ara</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-background-dark">
+                                <div
+                                    class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+                                    <span class="material-symbols-outlined text-2xl">mail</span>
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <p class="text-[#111318] dark:text-white text-base font-medium leading-normal">
+                                        E-posta</p>
+                                    <p class="text-[#616f89] dark:text-white/70 text-sm font-normal leading-normal">
+                                        moblezam@gmail.com</p>
+                                    <a class="text-primary text-sm font-medium mt-1"
+                                        href="mailto:moblezam@gmail.com">E-posta Gönder</a>
+                                </div>
+                            </div>
+                            <div class="mt-4 p-6 rounded-xl bg-white dark:bg-background-dark">
+                                <h3 class="text-lg font-bold mb-4">Bizi Takip Edin</h3>
+                                <div class="flex items-center gap-4">
+                                    <a class="flex items-center justify-center size-10 rounded-full bg-[#f0f2f4] dark:bg-white/10 text-[#616f89] dark:text-white/70 hover:bg-primary/20 dark:hover:bg-primary/30 hover:text-primary dark:hover:text-primary transition-colors"
+                                        href="#">
+                                        <svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24">
+                                            <path clip-rule="evenodd"
+                                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                                fill-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                    <a class="flex items-center justify-center size-10 rounded-full bg-[#f0f2f4] dark:bg-white/10 text-[#616f89] dark:text-white/70 hover:bg-primary/20 dark:hover:bg-primary/30 hover:text-primary dark:hover:text-primary transition-colors"
+                                        href="#">
+                                        <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                                            <path
+                                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="flex items-center justify-center size-10 rounded-full bg-[#f0f2f4] dark:bg-white/10 text-[#616f89] dark:text-white/70 hover:bg-primary/20 dark:hover:bg-primary/30 hover:text-primary dark:hover:text-primary transition-colors"
+                                        href="https://www.instagram.com/moblezam/">
+                                        <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                                            <path clip-rule="evenodd"
+                                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm-1.003 3.622a.933.933 0 100 1.867.933.933 0 000-1.867zM12 8.428a5.23 5.23 0 100 10.46 5.23 5.23 0 000-10.46zm0 1.867a3.363 3.363 0 110 6.726 3.363 3.363 0 010-6.726z"
+                                                fill-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm">
+                            <h2 class="text-2xl font-bold mb-1 text-[#111318] dark:text-white">Mesaj Gönderin</h2>
+                            <p class="text-[#616f89] dark:text-white/70 mb-6 text-sm">Formu doldurun, en kısa sürede
+                                size geri dönüş yapalım.</p>
+                            <form class="grid grid-cols-1 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-[#111318] dark:text-white/90 mb-1.5"
+                                        for="name">Ad Soyad</label>
+                                    <input
+                                        class="w-full rounded-lg border-[#e2e8f0] dark:border-white/20 bg-transparent dark:text-white/90 focus:border-primary focus:ring-primary focus:ring-opacity-50 transition"
+                                        id="name" name="name" placeholder="Adınız ve soyadınız" type="text" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-[#111318] dark:text-white/90 mb-1.5"
+                                        for="email">E-posta</label>
+                                    <input
+                                        class="w-full rounded-lg border-[#e2e8f0] dark:border-white/20 bg-transparent dark:text-white/90 focus:border-primary focus:ring-primary focus:ring-opacity-50 transition"
+                                        id="email" name="email" placeholder="ornek@eposta.com" type="email" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-[#111318] dark:text-white/90 mb-1.5"
+                                        for="subject">Konu</label>
+                                    <input
+                                        class="w-full rounded-lg border-[#e2e8f0] dark:border-white/20 bg-transparent dark:text-white/90 focus:border-primary focus:ring-primary focus:ring-opacity-50 transition"
+                                        id="subject" name="subject" placeholder="Mesajınızın konusu" type="text" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-[#111318] dark:text-white/90 mb-1.5"
+                                        for="message">Mesajınız</label>
+                                    <textarea
+                                        class="w-full rounded-lg border-[#e2e8f0] dark:border-white/20 bg-transparent dark:text-white/90 focus:border-primary focus:ring-primary focus:ring-opacity-50 transition"
+                                        id="message" name="message" placeholder="Bize ne söylemek istersiniz?"
+                                        rows="5"></textarea>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="flex items-center h-5">
+                                        <input class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                                            id="privacy" name="privacy" type="checkbox" />
+                                    </div>
+                                    <div class="ml-3 text-sm">
+                                        <label class="text-[#616f89] dark:text-white/70" for="privacy">
+                                            <a class="font-medium text-primary hover:underline" href="#">Gizlilik
+                                                Politikasını</a> okudum ve kabul ediyorum.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all"
+                                        type="submit">
+                                        Gönder
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-gray-700 overflow-hidden">
+                <div class="container mx-auto px-4 py-8">
+                    <div class="w-full h-96 rounded-lg overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.272428644255!2d29.1011095!3d41.0235892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac8f01f1883e7%3A0x4d18b1ea2296ad6!2zV8O8bXJhbmllIDc1LlnDvGwgQ3VtaHVyaXlldCBNZXNsZWtpIHZlIFRla25payBBbmFkb2x1IEzDvHNlcyDFnmxha2FsYXLEsQ!5e0!3m2!1str!2str!4v1643121499655!5m2!1str!2str"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            class="dark:grayscale-[30%] dark:invert-[0.9]" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="mt-16 border-t border-border-light dark:border-border-dark pt-12 pb-8">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div class="col-span-1 md:col-span-2">
+                            <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Moblezam</h3>
+                            <p class="mt-2 text-sm text-subtext-light dark:text-subtext-dark max-w-md">Yaşam
+                                alanlarınızı güzelleştirmek için tasarlanmış modern ve kaliteli mobilyalar.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-text-light dark:text-text-dark">Müşteri Hizmetleri</h4>
+                            <ul class="mt-4 space-y-2 text-sm">
+                                <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                        href="iletisim.html">Bize Ulaşın</a></li>
+                                <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                        href="SSS.html">Sıkça Sorulan Sorular</a></li>
+                                <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                        href="gizlilik.html">Gizlilik Politikası</a></li>
+                                <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                        href="#">Kargo Takibi</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-text-light dark:text-text-dark">Şirket</h4>
+                            <ul class="mt-4 space-y-2 text-sm">
+                                <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                        href="Hakkimizda.html">Hakkımızda</a></li>
+                                <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                        href="#">Kariyer</a></li>
+                                <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                        href="#">Basın</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-12 border-t border-border-light dark:border-border-dark pt-8 flex flex-col sm:flex-row justify-between items-center">
+                        <p class="text-sm text-subtext-light dark:text-subtext-dark">© 2025 Moblezam. Tüm hakları
+                            saklıdır.</p>
+                        <div class="flex gap-4 mt-4 sm:mt-0">
+                            <a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                href="#">
+                                <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                                    <path clip-rule="evenodd"
+                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                href="#">
+                                <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                href="https://www.instagram.com/moblezam/">
+                                <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                                    <path clip-rule="evenodd"
+                                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm-1.003 3.905a1.23 1.23 0 11-2.46 0 1.23 1.23 0 012.46 0zm-2.415 3.11a6.36 6.36 0 1012.72 0 6.36 6.36 0 00-12.72 0z"
+                                        fill-rule="evenodd"></path>
+                                    <path d="M15.42 12.11a3.42 3.42 0 11-6.84 0 3.42 3.42 0 016.84 0z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+</body>
+
+</html>

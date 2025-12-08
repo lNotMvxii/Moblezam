@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Hakkımızda Sayfası - Moblezam</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111318] dark:text-gray-200">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
+                <div class="container mx-auto px-4 sm:px-6 py-4">
+                    <div class="flex items-center justify-between">
+                        <!-- Logo and Brand Name -->
+                        <a href="index.html" class="flex items-center gap-3">
+                            <img src="logo.png" alt="Moblezam" class="h-10 w-auto">
+                            <span class="text-xl font-bold text-text-light dark:text-text-dark">Moblezam</span>
+                        </a>
+
+                        <!-- Navigation Links -->
+                        <nav class="hidden md:flex items-center gap-8">
+                            <a href="index.html"
+                                class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">Ana
+                                Sayfa</a>
+                            <a href="urunliste.html"
+                                class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">Ürünler</a>
+                            <a href="sepetsayfasi.html" class="text-sm font-bold text-primary">Sepet</a>
+                            <a href="iletisim.html"
+                                class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">İletişim</a>
+                        </nav>
+
+                        <!-- User Actions -->
+                        <div class="flex items-center gap-4">
+                            <button
+                                class="p-2 text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined">search</span>
+                            </button>
+                            <a href="sepetsayfasi.html"
+                                class="relative p-2 text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined">shopping_cart</span>
+                                <span
+                                    class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">2</span>
+                            </a>
+                            <button class="md:hidden p-2 text-text-light dark:text-text-dark">
+                                <span class="material-symbols-outlined">menu</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1">
+                <div class="px-4 sm:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+                    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                        <div class="@container">
+                            <div class="@[480px]:p-4">
+                                <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
+                                    data-alt="Modern bir mobilya atölyesinin aydınlık ve ilham verici iç mekanı"
+                                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZITqFhWzL5sir9s3iT9SN5X6H8KY7eQ_FQudvQ5tV3qB86wMthJgxayqkDwLPqE-jXLHpUmD6IBCNdT9Bp4TQ4LJvR72Dm_zgpJOyYGHTFmJ6n4q1HDavHiBkvsFjsu4xJ1s8-V9QDYfaagKdLy2O4g2MK__yCtELzB-kZGLnBhx86OZDsHRHhkO0uT1uDGTxJAB8cZulPfslZoicr3Wd4Pl71hszrzvqoWoVMv9BlCalu8d34RdHJDitpOK_z3PapYkNX-NQXb8");'>
+                                    <div class="flex flex-col gap-2 text-center">
+                                        <h1
+                                            class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                            Hikayemiz</h1>
+                                        <h2
+                                            class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                            Küçük bir aile atölyesinden modern, sürdürülebilir mobilyalar üreten bir
+                                            markaya yolculuğumuz.</h2>
+                                    </div>
+                                    <button
+                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                                        <span class="truncate">Koleksiyonumuzu Keşfedin</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <p
+                            class="text-[#111318] dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-8 px-4 text-center">
+                            Moblezam, kökleri 1990’lı yıllara dayanan bir aile atölyesinin, modern mobilya tasarım
+                            anlayışıyla yeniden yorumlanmış halidir.
+                            Bugün; kaliteli malzemeleri sürdürülebilir üretim teknikleriyle buluşturan, yenilikçi ve
+                            zamansız mobilyalar üreten bir marka olarak yolumuza devam ediyoruz.</p>
+                        <h2
+                            class="text-center text-[#111318] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-10">
+                            Yolculuğumuz</h2>
+                        <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4 py-6">
+                            <div class="flex flex-col items-center gap-1 pt-3">
+                                <div class="text-[#111318] dark:text-white size-6 flex items-center justify-center">
+                                    <span class="material-symbols-outlined">foundation</span>
+                                </div>
+                                <div class="w-[1.5px] bg-[#dbdfe6] dark:bg-gray-700 h-2 grow"></div>
+                            </div>
+                            <div class="flex flex-1 flex-col py-3">
+                                <p class="text-[#111318] dark:text-white text-base font-medium leading-normal">Kuruluş:
+                                    Bir Atölye Doğuyor</p>
+                                <p class="text-[#616f89] dark:text-gray-400 text-base font-normal leading-normal">1990
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-center gap-1">
+                                <div class="w-[1.5px] bg-[#dbdfe6] dark:bg-gray-700 h-2"></div>
+                                <div class="text-[#111318] dark:text-white size-6 flex items-center justify-center">
+                                    <span class="material-symbols-outlined">local_shipping</span>
+                                </div>
+                                <div class="w-[1.5px] bg-[#dbdfe6] dark:bg-gray-700 h-2 grow"></div>
+                            </div>
+                            <div class="flex flex-1 flex-col py-3">
+                                <p class="text-[#111318] dark:text-white text-base font-medium leading-normal">İlk Büyük
+                                    Siparişimiz</p>
+                                <p class="text-[#616f89] dark:text-gray-400 text-base font-normal leading-normal">1998
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-center gap-1">
+                                <div class="w-[1.5px] bg-[#dbdfe6] dark:bg-gray-700 h-2"></div>
+                                <div class="text-[#111318] dark:text-white size-6 flex items-center justify-center">
+                                    <span class="material-symbols-outlined">eco</span>
+                                </div>
+                                <div class="w-[1.5px] bg-[#dbdfe6] dark:bg-gray-700 h-2 grow"></div>
+                            </div>
+                            <div class="flex flex-1 flex-col py-3">
+                                <p class="text-[#111318] dark:text-white text-base font-medium leading-normal">
+                                    Sürdürülebilirlik İlkeleri</p>
+                                <p class="text-[#616f89] dark:text-gray-400 text-base font-normal leading-normal">2010
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-center gap-1 pb-3">
+                                <div class="w-[1.5px] bg-[#dbdfe6] dark:bg-gray-700 h-2"></div>
+                                <div class="text-[#111318] dark:text-white size-6 flex items-center justify-center">
+                                    <span class="material-symbols-outlined">celebration</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-1 flex-col py-3">
+                                <p class="text-[#111318] dark:text-white text-base font-medium leading-normal">Bugün</p>
+                                <p class="text-[#616f89] dark:text-gray-400 text-base font-normal leading-normal">
+                                    Günümüz</p>
+                            </div>
+                        </div>
+                        <h2
+                            class="text-center text-[#111318] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-16">
+                            Değerlerimiz</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 px-4 py-6">
+                            <div
+                                class="flex flex-col items-center text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+                                <div
+                                    class="flex items-center justify-center size-12 rounded-full bg-primary/20 text-primary mb-4">
+                                    <span class="material-symbols-outlined text-3xl">verified</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2 text-[#111318] dark:text-white">Kalite</h3>
+                                <p class="text-[#616f89] dark:text-gray-400 text-sm">Uzun yıllar boyunca dayanıklılığını
+                                    koruyan, premium malzemelerle üretilmiş yüksek standartlı mobilyalar sunarız.</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+                                <div
+                                    class="flex items-center justify-center size-12 rounded-full bg-primary/20 text-primary mb-4">
+                                    <span class="material-symbols-outlined text-3xl">forest</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2 text-[#111318] dark:text-white">Sürdürülebilirlik</h3>
+                                <p class="text-[#616f89] dark:text-gray-400 text-sm">Doğaya zarar vermeyen, sorumlu
+                                    kaynaklardan elde edilen malzemeleri özenle seçeriz.</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+                                <div
+                                    class="flex items-center justify-center size-12 rounded-full bg-primary/20 text-primary mb-4">
+                                    <span class="material-symbols-outlined text-3xl">design_services</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2 text-[#111318] dark:text-white">Tasarım</h3>
+                                <p class="text-[#616f89] dark:text-gray-400 text-sm">Minimal çizgiler, akıllı
+                                    fonksiyonlar ve zamansız tasarım anlayışı ile modern yaşam alanlarına uyum sağlayan
+                                    ürünler üretiriz.</p>
+                            </div>
+                        </div>
+                        <h2
+                            class="text-center text-[#111318] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-16">
+                            Ekibimizle Tanışın</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-6">
+                            <div class="text-center">
+                                <img alt="Ahmet Yılmaz, Kurucu" class="w-full h-56 object-cover rounded-lg mb-4"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8JT4ox1jCexiwHpuhKk8NAL3UOVI4rEpQZ6WW3qtaTwpR4AOUZlvg8Y8E06S20ot_9jD_KZeGWtYMNtQrzr8ePane8iyCsV27wJqOzgsaOjDAuqm9XIEimftX885Mvkv3hE-X2gk7UMoY10oD6CaAxp_BhKe5TQSzk9LhU4vU995QmwRicJEVQ3sF5wU1yK9XIRF3HuZheu7kRbSGASAiqohwvk0I9c9AT-OP-ZZm6gmMrGlDv7QODdF3pdy8_r6fEVEEyFcerzk" />
+                                <h4 class="font-bold text-[#111318] dark:text-white">Ahmet Yılmaz</h4>
+                                <p class="text-sm text-[#616f89] dark:text-gray-400">Kurucu</p>
+                            </div>
+                            <div class="text-center">
+                                <img alt="Zeynep Kaya, Tasarım Direktörü"
+                                    class="w-full h-56 object-cover rounded-lg mb-4"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZvx5sCjMfWWWkGbhcTFBakfmoxMU4_Cu7yPxdyzzGnTTwELQoJvGmX9jScje_OFsHMyi-58n2WIN_47g2vyXfKkNUqlTVNz0Rzv_CZhSytNPvTPdCDOYJ3WWP9LlHmgaUCik0k4H0jQ_yXixNwVfdI8eq3zOrWsjcLJahED7Ys_AoA2N2pie17D3hFTohBqGgjldENjnwEjVNvJoFHl5XXyAK8098jg_63qrRMG46sVwUSnMuQHvpoTya_UH3tv0nFcaEvBR-dMc" />
+                                <h4 class="font-bold text-[#111318] dark:text-white">Zeynep Kaya</h4>
+                                <p class="text-sm text-[#616f89] dark:text-gray-400">Tasarım Direktörü</p>
+                            </div>
+                            <div class="text-center">
+                                <img alt="Mehmet Öztürk, Üretim Müdürü" class="w-full h-56 object-cover rounded-lg mb-4"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd8hd8SaPGYk6vii6tKspH-pqJjLj4X6sTNvSlfDiPv3cEH3D7AJ8fnqM2YDfTXyDtWLai0Y_s2KcHeTTMGykdJb4PqptqHcEgO2n6qZvwwKrztOSynzwrq6rGneV03sbIB-PnFfKj8MyP43d75MtD-PNWO0ERQD1UuGlcfSnOMLcLa8lL_hdSXptzVoKg9bS_bBxYQ9PNat6uX_q-zGcjNClVlN3sOj6JpcWvFTEda-Llyql4K68VkZUoqCf7e_s6Vo5mnf7BGN0" />
+                                <h4 class="font-bold text-[#111318] dark:text-white">Mehmet Öztürk</h4>
+                                <p class="text-sm text-[#616f89] dark:text-gray-400">Üretim Müdürü</p>
+                            </div>
+                            <div class="text-center">
+                                <img alt="Ayşe Demir, Müşteri İlişkileri"
+                                    class="w-full h-56 object-cover rounded-lg mb-4"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgEEWldNpNb9d_ZmBaWZlrjEvtcXv1EXjs361-uAE2NYhxbC9dYrx8ytIhoLK8iXCD1x3C5moI1m0cuXq7FF0pU0kOw4VYyOH_Pi9AiHm8Q5v-N6h0XTTJDt8uMsxfLGvvT0Ip1HeTze9muHN_eGCYhb8FeDDtZC18LOEhCiAI-X0rjcjuBZbCvMjYq4f-cpjNCYDycWCDWscBuy2q6QDqrWVAq4ZIx_XuNNevqoC8JzKKdovyhSlOSOOIBUcbLmZp7tCPXb-8TPI" />
+                                <h4 class="font-bold text-[#111318] dark:text-white">Ayşe Demir</h4>
+                                <p class="text-sm text-[#616f89] dark:text-gray-400">Müşteri İlişkileri</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="mt-16 border-t border-border-light dark:border-border-dark pt-12 pb-8">
+                    <div class="container mx-auto px-4">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                            <div class="col-span-1 md:col-span-2">
+                                <a href="index.html" class="flex items-center gap-3">
+                                    <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Moblezam</h3>
+                                </a>
+                                <p class="mt-2 text-sm text-subtext-light dark:text-subtext-dark max-w-md">Yaşam
+                                    alanlarınızı güzelleştirmek için tasarlanmış modern ve kaliteli mobilyalar.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-text-light dark:text-text-dark">Müşteri Hizmetleri</h4>
+                                <ul class="mt-4 space-y-2 text-sm">
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="iletisim.html">Bize Ulaşın</a></li>
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="SSS.html">Sıkça Sorulan Sorular</a></li>
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="gizlilik.html">Gizlilik Politikası</a></li>
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="#">Kargo Takibi</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-text-light dark:text-text-dark">Şirket</h4>
+                                <ul class="mt-4 space-y-2 text-sm">
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="Hakkimizda.html">Hakkımızda</a></li>
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="#">Kariyer</a></li>
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="#">Basın</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-12 border-t border-border-light dark:border-border-dark pt-8 flex flex-col sm:flex-row justify-between items-center">
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark">© 2025 Moblezam. Tüm hakları
+                                saklıdır.</p>
+                            <div class="flex gap-4 mt-4 sm:mt-0">
+                                <a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                    href="#">
+                                    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                                        <path clip-rule="evenodd"
+                                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                                <a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                    href="#">
+                                    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                                        <path
+                                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                    href="https://www.instagram.com/moblezam/">
+                                    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                                        <path clip-rule="evenodd"
+                                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm-1.003 3.905a1.23 1.23 0 11-2.46 0 1.23 1.23 0 012.46 0zm-2.415 3.11a6.36 6.36 0 1012.72 0 6.36 6.36 0 00-12.72 0z"
+                                            fill-rule="evenodd"></path>
+                                        <path d="M15.42 12.11a3.42 3.42 0 11-6.84 0 3.42 3.42 0 016.84 0z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+</body>
+
+</html>

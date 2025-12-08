@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ürün Detay Sayfası</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-[#333333] dark:text-gray-200">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
+                <div class="container mx-auto px-4 sm:px-6 py-4">
+                    <div class="flex items-center justify-between">
+                        <!-- Logo and Brand Name -->
+                        <a href="index.html" class="flex items-center gap-3">
+                            <img src="logo.png" alt="Moblezam" class="h-10 w-auto">
+
+                            <span class="text-xl font-bold text-text-light dark:text-text-dark">Moblezam</span>
+                        </a>
+
+                        <!-- Navigation Links -->
+                        <nav class="hidden md:flex items-center gap-8">
+                            <a href="index.html"
+                                class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">Anasayfa</a>
+                            <a href="urunliste.html"
+                                class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">Ürünler</a>
+                            <a href="sepetsayfasi.html"
+                                class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">Sepet</a>
+                            <a href="iletisim.html"
+                                class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">İletişim</a>
+                            <a href="#"
+                                class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">İndirim</a>
+                        </nav>
+
+                        <!-- User Actions -->
+                        <div class="flex items-center gap-4">
+                            <div class="hidden md:block">
+                                <button id="search-btn" aria-label="Arama" title="Arama"
+                                    class="p-2 text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors">
+                                    <span class="material-symbols-outlined">search</span>
+                                </button>
+                            </div>
+                            <button
+                                class="p-2 text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </button>
+                            <a href="sepetsayfasi.html"
+                                class="p-2 text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors relative">
+                                <span class="material-symbols-outlined">shopping_cart</span>
+                                <span
+                                    class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                            </a>
+
+                            <button class="md:hidden p-2 text-text-light dark:text-text-dark">
+                                <span class="material-symbols-outlined">menu</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="px-4 md:px-10 lg:px-20 py-8 flex flex-col items-center">
+                <div class="layout-content-container flex flex-col w-full max-w-6xl">
+                    <div class="flex flex-wrap gap-2 text-sm mb-6">
+                        <a class="text-[#616f89] dark:text-gray-400 font-medium leading-normal hover:text-primary"
+                            href="index.html">Anasayfa</a>
+                        <span class="text-[#616f89] dark:text-gray-400 font-medium leading-normal">/</span>
+                        <a class="text-[#616f89] dark:text-gray-400 font-medium leading-normal hover:text-primary"
+                            href="#">Yataklar</a>
+                        <span class="text-[#616f89] dark:text-gray-400 font-medium leading-normal">/</span>
+                        <span class="text-[#111318] dark:text-white font-medium leading-normal">Modern Kadife
+                            Yatak</span>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+                        <!-- Image Gallery -->
+                        <div class="flex flex-col gap-4">
+                            <img src="Modernkadife.jpg" alt="Modern Kadife Yatak"
+                                class="w-full h-auto rounded-xl">
+                            <div class="grid grid-cols-4 gap-4">
+                                <img src="https://sc04.alicdn.com/kf/He5923410224a4980b8da9f0286bfd8ebw.jpg"
+                                    alt="Yatak 1" class="w-full h-auto rounded-lg">
+                                <img src="https://s.alicdn.com/@sc04/kf/H4392ccd42d764f6ba8f8a47d5f4e3f89l.jpg"
+                                    alt="Yatak 1" class="w-full h-auto rounded-lg">
+                                <img src="https://sc04.alicdn.com/kf/H2aefe6f4910b49c19a5f3d8ea8b687a3O.jpg"
+                                    alt="Yatak 1" class="w-full h-auto rounded-lg">
+                                <img src="https://image.made-in-china.com/202f0j00LjDcSlpKyZqF/Willsoon-Modern-Bed-Corduroy-Fabric-Ottoman-Bed-with-Soft-Headboard-Double-Size-for-Home-Use-California-King-Bed-Hotel-Furniture.webp"
+                                    alt="Yatak 1" class="w-full h-auto rounded-lg">
+
+
+                            </div>
+                        </div>
+                        <!-- Product Information Panel -->
+                        <div class="flex flex-col">
+                            <h1
+                                class="text-[#111318] dark:text-white tracking-tight text-3xl md:text-4xl font-bold leading-tight">
+                                Modern Kadife </h1>
+                            <div class="flex items-center gap-2 mt-3 mb-4">
+                                <div class="flex text-amber-400">
+                                    <span class="material-symbols-outlined !text-xl"
+                                        style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined !text-xl"
+                                        style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined !text-xl"
+                                        style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined !text-xl"
+                                        style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined !text-xl">star</span>
+                                </div>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">(124 Değerlendirme)</span>
+                            </div>
+                            <p class="text-3xl font-bold text-primary mb-6">12.499,00 TL</p>
+                            <div class="mb-6">
+                                <h3 class="text-sm font-bold uppercase text-gray-500 dark:text-gray-400 mb-2">Renk</h3>
+                                <div class="flex items-center gap-3">
+                                    <button aria-label="Zeytin Yeşili"
+                                        class="size-8 rounded-full bg-teal-800 ring-2 ring-offset-2 dark:ring-offset-background-dark ring-primary"></button>
+                                    <button aria-label="Antrasit Gri" class="size-8 rounded-full bg-slate-700"></button>
+                                    <button aria-label="Hardal Sarısı"
+                                        class="size-8 rounded-full bg-amber-700"></button>
+                                    <button aria-label="Bordo" class="size-8 rounded-full bg-rose-800"></button>
+                                </div>
+                            </div>
+                            <div class="flex items-end gap-4 mb-8">
+                                <div>
+                                    <h3 class="text-sm font-bold uppercase text-gray-500 dark:text-gray-400 mb-2">Adet
+                                    </h3>
+                                    <div
+                                        class="flex items-center border border-gray-300 dark:border-gray-600 rounded-lg">
+                                        <button class="px-3 py-2 text-gray-600 dark:text-gray-300">-</button>
+                                        <span class="px-4 py-2 font-bold">1</span>
+                                        <button class="px-3 py-2 text-gray-600 dark:text-gray-300">+</button>
+                                    </div>
+                                </div>
+                                <div class="flex-1 flex items-center gap-3">
+                                    <button
+                                        class="w-full flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]">
+                                        <span class="truncate">Sepete Ekle</span>
+                                    </button>
+                                    <button
+                                        class="flex min-w-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-sm font-bold leading-normal tracking-[0.015em] px-3">
+                                        <span class="material-symbols-outlined">favorite_border</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="border-t border-gray-200 dark:border-gray-700 pt-6">
+                                <div class="mb-4">
+                                    <h3 class="font-bold text-lg mb-2 text-[#111318] dark:text-white">Açıklama</h3>
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">Oturma odanıza
+                                        modern bir dokunuş ve benzersiz bir konfor katmak için tasarlanan bu kadife
+                                        koltuk, şık tasarımı ve kaliteli malzemesiyle öne çıkıyor. Yumuşak dokusu ve
+                                        dayanıklı yapısıyla uzun yıllar keyifle kullanabilirsiniz.</p>
+                                </div>
+                                <div class="mb-4">
+                                    <h3 class="font-bold text-lg mb-2 text-[#111318] dark:text-white">Boyutlar &amp;
+                                        Teknik Detaylar</h3>
+                                    <ul
+                                        class="list-disc list-inside text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                                        <li>Genişlik: 220 cm</li>
+                                        <li>Derinlik: 95 cm</li>
+                                        <li>Yükseklik: 85 cm</li>
+                                        <li>Malzeme: Kadife Kumaş, Gürgen İskelet</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-2 text-[#111318] dark:text-white">Teslimat &amp;
+                                        İade</h3>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">7-14 iş günü içinde ücretsiz
+                                        teslimat. 30 gün içinde kolay iade imkanı.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Similar Products -->
+                    <div class="mt-16 md:mt-24">
+                        <h2
+                            class="text-[#111318] dark:text-white tracking-tight text-2xl md:text-3xl font-bold leading-tight text-center mb-8">
+                            Bunları da Beğenebilirsiniz</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                            <div class="flex flex-col group">
+                                <div class="w-full aspect-[4/3] rounded-xl mb-3 overflow-hidden">
+                                    <img src="ahsapsandalye.jpg" alt="Minimalist ahşap sandalye"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <h3
+                                    class="font-semibold text-base text-[#111318] dark:text-white group-hover:text-primary">
+                                    Ahşap Sandalye</h3>
+                                <p class="font-bold text-lg text-primary">1.899,00 TL</p>
+                            </div>
+                            <div class="flex flex-col group">
+                                <div class="w-full aspect-[4/3] rounded-xl mb-3 overflow-hidden">
+                                    <img src="iskandinavkanepe.jpg" alt="İskandinav tarzı kanepe"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <h3
+                                    class="font-semibold text-base text-[#111318] dark:text-white group-hover:text-primary">
+                                    İskandinav Kanepe</h3>
+                                <p class="font-bold text-lg text-primary">15.999,00 TL</p>
+                            </div>
+                            <div class="flex flex-col group">
+                                <div class="w-full aspect-[4/3] rounded-xl mb-3 overflow-hidden">
+                                    <img src="metalsehpa.jpg" alt="Modern metal sehpa"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <h3
+                                    class="font-semibold text-base text-[#111318] dark:text-white group-hover:text-primary">
+                                    Metal Orta Sehpa</h3>
+                                <p class="font-bold text-lg text-primary">3.250,00 TL</p>
+                            </div>
+                            <div class="flex flex-col group">
+                                <div class="w-full aspect-[4/3] rounded-xl mb-3 overflow-hidden">
+                                    <img src="deriberjer.jpg" alt="Deri berjer koltuk"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <h3
+                                    class="font-semibold text-base text-[#111318] dark:text-white group-hover:text-primary">
+                                    Deri Berjer</h3>
+                                <p class="font-bold text-lg text-primary">8.500,00 TL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="mt-16 border-t border-border-light dark:border-border-dark pt-12 pb-8">
+                    <div class="container mx-auto px-4">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                            <div class="col-span-1 md:col-span-2">
+                                <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Moblezam</h3>
+                                <p class="mt-2 text-sm text-subtext-light dark:text-subtext-dark max-w-md">Yaşam
+                                    alanlarınızı güzelleştirmek için tasarlanmış modern ve kaliteli mobilyalar.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-text-light dark:text-text-dark">Müşteri Hizmetleri</h4>
+                                <ul class="mt-4 space-y-2 text-sm">
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="iletisim.html">Bize Ulaşın</a></li>
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="SSS.html">Sıkça Sorulan Sorular</a></li>
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="gizlilik.html">Gizlilik Politikası</a></li>
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="#">Kargo Takibi</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-text-light dark:text-text-dark">Şirket</h4>
+                                <ul class="mt-4 space-y-2 text-sm">
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="Hakkimizda.html">Hakkımızda</a></li>
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="#">Kariyer</a></li>
+                                    <li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                            href="#">Basın</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-12 border-t border-border-light dark:border-border-dark pt-8 flex flex-col sm:flex-row justify-between items-center">
+                            <p class="text-sm text-subtext-light dark:text-subtext-dark">© 2025 Moblezam. Tüm hakları
+                                saklıdır.</p>
+                            <div class="flex gap-4 mt-4 sm:mt-0">
+                                <a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                    href="#">
+                                    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                                        <path clip-rule="evenodd"
+                                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                                <a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                    href="#">
+                                    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                                        <path
+                                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary"
+                                    href="https://www.instagram.com/moblezam/">
+                                    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                                        <path clip-rule="evenodd"
+                                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm-1.003 3.905a1.23 1.23 0 11-2.46 0 1.23 1.23 0 012.46 0zm-2.415 3.11a6.36 6.36 0 1012.72 0 6.36 6.36 0 00-12.72 0z"
+                                            fill-rule="evenodd"></path>
+                                        <path d="M15.42 12.11a3.42 3.42 0 11-6.84 0 3.42 3.42 0 016.84 0z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
